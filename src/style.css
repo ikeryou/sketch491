@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1;
+}
+
+html, body {
+  background-color: #000;
+}
+
+.js-tgSVG {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  z-index: 9999;
+}
+
+.s-gpu {
+  will-change: transform;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.l-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+.l-line {
+  font-size: 10px;
+  color: #FFF;
+}
+
+.l-line span {
+  color: #000;
+}
+
+
+
+
+.l-debug {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #FFF;
+  font-size: 12px;
+  display: none;
+}
+.l-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 40px;
+  color: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 9999;
+}
+.l-info p {
+  font-size: 14px;
+  color: inherit;
+  background-color: #000;
+  padding: 5px 20px 5px 20px;
+}
+.l-info a {
+  color: inherit;
+  text-decoration: line-through;
+}
+.l-info a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+  .l-info {
+    justify-content: flex-start;
+    margin: 20px;
+    height: auto;
+  }
+  .l-info p {
+    font-size: 10px;
+  }
+
+  .l-main-wrapper {
+    padding-top: 80px;
+  }
+}
